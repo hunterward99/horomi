@@ -1,0 +1,216 @@
+.header
+    position: fixed
+    font-family: Inter-Regular
+    width: 100%
+    z-index: 3
+
+    &__content
+        display: flex
+        justify-content: space-between
+        margin: 30px 0
+
+    .logo
+        display: flex
+        &__icon
+            margin-right: 20px
+            // &-svg
+
+        &__text
+            &-one
+                text-transform: uppercase
+                color: white
+                font-size: 15px
+            &-two
+                text-transform: uppercase
+                color: $main-color
+                font-size: 15px
+                letter-spacing: -0.03em
+    
+    &__menu
+        display: flex
+        list-style-type: none
+        font-size: 16px
+        font-family: Inter-Regular
+        text-transform: uppercase
+        color: white
+        margin: 9px 0
+        position: relative
+    &__item
+        margin: 0 28px
+        &:last-child
+            margin-right: 0
+        &:first-child
+            margin-left: 0
+        &-link, &-link:visited
+            text-decoration: none
+            color: white
+        &-link:hover
+            color: $main-color
+            transition: color .3s
+        &-link:not(:hover)
+            transition: color .3s
+        &-galka-bottom
+            padding-bottom: 3px
+            padding-left: 3px
+        &:hover
+
+            .header__btn
+                // cursor: pointer
+                color: $main-color
+                transition: color .3s
+        &-services
+            &:hover
+                cursor: pointer
+    &:hover
+        background-color: rgba(27,27,27, .9)
+        box-shadow: inset 0px -3px 0px #BD6736
+        transition: background-color 1.7s, box-shadow 1.5s
+    &:not(&:hover)
+        transition: background-color 1.7s, box-shadow 1s
+
+    &__submenu-1
+        position: absolute
+        border-radius: 8px
+        transform: translateY(-7%)
+        opacity: 0
+        visibility: hidden
+        list-style-type: none
+        font-size: 13px
+        font-family: Inter-Regular
+        color: white
+        top: 30px
+        background-color: $header-submenu-background-color
+        text-transform: none
+        z-index: 15
+        transition: transform .4s, opacity .4s, visibility .4s, box-shadow .4s
+        &_active
+            opacity: 1
+            visibility: visible
+            transition: opacity 1s
+            box-shadow: 0px -4px 0px #BD6736
+            transform: translateY(7%)
+            transition: box-shadow 1s, opacity .6s, transform .6s
+
+
+    &__subitem-1
+        padding: 10.5px 76px 10.5px 39px 
+        width: 100%
+        position: relative
+        &-link
+            text-transform: none
+        &-galka-right
+            position: absolute
+            padding-top: 10px
+            right: 25px
+            // padding-bottom: 3px
+            transform: rotate(-90deg)
+        &:hover
+            background: #2c2c2ca9
+            .header__subitem-link
+                color: $main-color
+
+    &__submenu-2
+        position: absolute
+        left: 100%
+        width: 100%
+        border-radius: 8px
+        // height: 100%
+        // top: -19sem
+        // top: 0
+        opacity: 0
+        visibility: hidden
+        transform: translateY(27%)
+        top: 0
+        list-style-type: none
+        font-size: 13px
+        font-family: Inter-Regular
+        color: white
+        background-color: $header-submenu-background-color
+        text-transform: none
+        transition: 1s opacity
+        z-index: 15
+        box-shadow: 0px -4px 0px #BD6736
+        transition: transform .4s, opacity .4s, visibility .4s, box-shadow .4s
+        &_active
+            // display: block
+            // top: 30px
+            // left: 300px
+    &__subitem-2
+        padding: 10.5px 26px 10.5px 39px 
+        width: 100%
+        position: relative
+        &-link
+            text-transform: none
+        &:hover
+            background: #2c2c2ca9
+            .header__subitem-link
+                color: $main-color
+
+    &__submenu-3
+        position: absolute
+        left: 100%
+        width: 100%
+        border-radius: 8px
+        // height: 100%
+        // top: -19sem
+        // top: 0
+        opacity: 0
+        visibility: hidden
+        transform: translateY(9%)
+        top: 0
+        list-style-type: none
+        font-size: 13px
+        font-family: Inter-Regular
+        color: white
+        background-color: $header-submenu-background-color
+        text-transform: none
+        transition: 1s opacity
+        z-index: 15
+        box-shadow: 0px -4px 0px #BD6736
+        transition: transform .4s, opacity .4s, visibility .4s, box-shadow .4s
+        &_active
+            // display: block
+            // top: 30px
+            // left: 300px
+    &__subitem-3
+        padding: 12.5px 26px 12.5px 26px 
+        // margin-right: 20px
+        // margin-left: 10px
+        width: 100%
+        position: relative
+        &-link
+            text-transform: none
+        &:hover
+            background: #2c2c2ca9
+            .header__subitem-link
+                color: $main-color
+#decoration-works
+    &:hover
+        .header__submenu-3
+            opacity: 1
+            visibility: visible
+            transform: translateY(0%)
+            transition: visibility 1s, opacity .4s, transform .6s
+#designing
+    &:hover
+        .header__submenu-2
+            opacity: 1
+            visibility: visible
+            transform: translateY(0%)
+            transition: visibility 1s, opacity .4s, transform .6s
+
+.header__services
+    font-size: 16px
+    font-family: Inter-Regular
+    text-transform: uppercase
+    color: white
+    background: none
+    border: none
+    &:hover 
+        color: $main-color
+        transition: color .3s
+        cursor: pointer
+
+.container
+    width: 1630px
+    margin: 0 auto

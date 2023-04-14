@@ -1,0 +1,91 @@
+.main
+    position: relative
+    &__background
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: url('/png/test3.png') center/cover no-repeat
+        // background: transparent url("/png/test3.png") no-repeat scroll 50% 50%
+        // animation: 20s scale infinite linear
+        
+        // @keyframes scale
+        //     0%
+        //         transform: scale(1,0.0,0)
+            
+        //     50%
+        //         transform: scale(1.9)
+            
+        //     100%
+        //         transform: scale(0,0.0,0)
+        
+        
+
+
+        // min-height: 1080px
+        // background-position: 0px 0px
+        // transition: background .5s
+        // animation: animatedBackground 10s linear
+        // -moz-animation: animatedBackground 10s linear infinite
+        // -webkit-animation: animatedBackground 10s linear infinite
+        // -ms-animation: animatedBackground 10s linear infinite
+        // -o-animation: animatedBackground 10s linear infinite
+        z-index: -1
+        // &:hover
+        //     transform: scale(-1)
+        //     transition: transform 10s
+    &__mouse-icon
+        position: absolute
+        text-align: center
+        // margin: 0 auto
+        padding-bottom: 59px
+        animation: mouse 3s infinite 
+        top: 85%
+        left: 50%
+        transform: translateX(-50%)
+    &__title
+        font-family: Inter-Medium
+        font-size: 42px
+        color: white
+        // text-transform: uppercase
+        // z-index: 0
+        margin-bottom: 18px
+    &__descr
+        font-family: Inter-Medium
+        font-size: 38px
+        color: $main-color
+        // max-width: 934px
+        // text-transform: uppercase
+        margin-bottom: 82px
+    &__buttons
+        display: flex
+    &__button
+        // max-width: 210px
+        display: flex
+        padding: 18px 53px
+        // background: linear-gradient(90deg, #F3803F 0%, rgba(243, 128, 63, 0.29) 100%)
+        border-radius: 29px
+        color: white
+        font-size: 20px
+        font-family: Inter-Regular
+        text-transform: uppercase
+        cursor: pointer
+        &-text
+            padding-left: 10px
+        &:last-child
+            background: #BD6736
+            // box-shadow: -5px 0px 0px #BD6736
+            border-radius: 29px
+        &:first-child
+            margin-right: 19px
+            background: #BD6736
+            // box-shadow: -11px 0px 0px #1B1B1B
+            border-radius: 29px
+        &:last-child
+            margin-left: 19px
+        &:hover
+            background-color: #bd6836c9
+    &__text-section
+        padding: 41vh 0
+        position: relative
