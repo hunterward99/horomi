@@ -1,19 +1,19 @@
 @charset "UTF-8";
 @font-face {
   font-family: Inter-Regular;
-  src: url(/fonts/Inter-Regular.ttf);
+  src: url(../fonts/Inter-Regular.ttf);
 }
 @font-face {
   font-family: Inter-Medium;
-  src: url(/fonts/Inter-Medium.ttf);
+  src: url(../fonts/Inter-Medium.ttf);
 }
 @font-face {
   font-family: Inter-Bold;
-  src: url(/fonts/Inter-Bold.ttf);
+  src: url(../fonts/Inter-Bold.ttf);
 }
 @font-face {
   font-family: Inter-Light;
-  src: url(/fonts/Inter-Light.ttf);
+  src: url(../fonts/Inter-Light.ttf);
 }
 ::-webkit-scrollbar {
   width: 4px;
@@ -834,6 +834,46 @@
 .blogs__photo {
   border-radius: 20px;
   position: relative;
+}
+
+.calc {
+  margin-top: 81px;
+  margin-bottom: 89px;
+}
+.calc__content {
+  width: 100%;
+  background-color: #1B1B1B;
+  border-radius: 8px;
+  padding: 27px 44px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 8px 0px #BCBCBC;
+}
+.calc__icon {
+  display: flex;
+  align-items: center;
+}
+.calc__wrapper {
+  display: flex;
+}
+.calc__descr {
+  font-family: Inter-Medium;
+  font-size: 18px;
+  max-width: 456px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.calc__button {
+  font-family: Inter-Medium;
+  font-size: 16px;
+  padding: 19px 30px;
+  background-color: #BD6736;
+  border-radius: 8px;
+}
+.calc__button:hover {
+  cursor: pointer;
 }
 
 * {
