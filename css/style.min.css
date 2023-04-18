@@ -836,8 +836,8 @@
 }
 
 .blogs {
-  margin-top: 174px;
-  margin-bottom: 174px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 .blogs__cards {
   display: flex;
@@ -851,6 +851,9 @@
 }
 .blogs__card:last-child {
   margin-left: 111px;
+}
+.blogs__card:nth-child(3), .blogs__card:nth-child(4) {
+  padding-bottom: 0;
 }
 .blogs__photo {
   border-radius: 20px;
