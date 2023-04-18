@@ -5,13 +5,18 @@
         margin-top: 58px
     &__columns
         display: flex
-
-        flex-direction: column
+        justify-content: space-around
+        // flex-direction: column
     &__column
         display: flex
-        justify-content: space-around
+        flex-direction: column
+        justify-content: space-between
         // justify-content: space-between
-        margin-top: 76px
+        // margin-top: 76px
+        &:first-child
+            margin-top: 0
+    &__block
+        margin-top: 50px
         &:first-child
             margin-top: 0
     &__number
@@ -25,5 +30,5 @@
         font-size: 14px
         text-transform: uppercase
         padding-top: 13px
-        max-width: 136px
+        // max-width: 156px
         text-align: center

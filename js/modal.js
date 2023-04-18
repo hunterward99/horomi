@@ -1,10 +1,15 @@
 let feedbackBtn = document.querySelector('.feedback__button');
+let calcBtn = document.querySelector('.calc__button');
 let modal = document.querySelector('.modal');
 let modalBg = document.querySelector('.modal__bg');
 let closeBtn = document.querySelector('.modal__button-close');
 let modalBlock = document.querySelector('.modal__block');
 
 feedbackBtn.addEventListener('click', () => {
+    showModal(); 
+});
+
+calcBtn.addEventListener('click', () => {
     showModal(); 
 });
 
