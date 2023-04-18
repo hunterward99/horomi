@@ -15,6 +15,7 @@ export default function showdev() {
     devBlock.style.cssText = 'transform: translate(-50%, -50%)';
     dev.style.transition = 'visibility .7s, opacity .7s';
     devBlock.style.transition = 'transform 1s';
+    document.body.style.overflow = 'hidden';
 
     // devBlock.style.cssText = 'transform: translateY(100%)';
 
@@ -38,4 +39,5 @@ function closedev() {
     devBlock.style.cssText = 'transform: translate(-80%, -50%)';
     devBlock.style.transition = 'transform 1s';
     dev.style.transition = 'visibility .3s, opacity .3s';
+    document.body.style.overflow = 'visible';
 }
