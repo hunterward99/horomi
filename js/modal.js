@@ -20,6 +20,7 @@ export default function showModal() {
     modalBlock.style.cssText = 'transform: translate(-50%, -50%)';
     modal.style.transition = 'visibility .7s, opacity .7s';
     modalBlock.style.transition = 'transform 1s';
+    document.body.style.overflow = 'hidden';
 
     // modalBlock.style.cssText = 'transform: translateY(100%)';
 
@@ -43,4 +44,5 @@ function closeModal() {
     modalBlock.style.cssText = 'transform: translate(-50%, -300%)';
     modalBlock.style.transition = 'transform 1s';
     modal.style.transition = 'visibility .3s, opacity .3s';
+    document.body.style.overflow = 'visible';
 }
