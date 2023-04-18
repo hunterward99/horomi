@@ -32,9 +32,9 @@
             transition: color .3s
         &-link:not(:hover)
             transition: color .3s
-        &-galka-bottom
-            padding-bottom: 3px
-            padding-left: 3px
+        &:nth-child(2)
+            display: inline-block
+
         &:hover
 
             .header__btn
@@ -83,8 +83,12 @@
             text-transform: none
         &-galka-right
             position: absolute
-            padding-top: 10px
-            right: 25px
+            // padding-top: 10px
+            top: 40%
+            right: -45%
+            // padding-bottom: 3px
+            // padding-left: 5px
+            height: 8px
             // padding-bottom: 3px
             transform: rotate(-90deg)
         &:hover
@@ -189,10 +193,18 @@
     color: white
     background: none
     border: none
+    display: flex
+    align-items: center
     &:hover 
         color: $main-color
         transition: color .3s
         cursor: pointer
+
+    &-galka-bottom
+        padding-bottom: 3px
+        padding-left: 5px
+        height: 10px
+        // display: inline-block
 
 .container
     width: 1500px
