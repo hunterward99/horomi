@@ -21,7 +21,8 @@ export default function showModal() {
     modal.style.transition = 'visibility .7s, opacity .7s';
     modalBlock.style.transition = 'transform 1s';
     document.body.style.overflow = 'hidden';
-
+    
+    $("#number").mask("7(999) 999-9999");
     // modalBlock.style.cssText = 'transform: translateY(100%)';
 
     modalBg.addEventListener('click', () => {

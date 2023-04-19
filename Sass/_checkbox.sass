@@ -1,0 +1,36 @@
+.real-checkbox
+    width: 0
+    height: 0
+    opacity: 0
+    position: absolute
+    z-index: -1
+
+.custom-checkbox
+    position: relative
+    display: inline-block
+    width: 16px
+    height: 16px
+    border: 1px solid $main-color
+    border-radius: 2px
+    margin-right: 6px
+    vertical-align: middle
+    &:before
+        content: ''
+        width: 16px
+        height: 16px
+        border-radius: 2px
+        display: inline-block
+        background-image: url(../png/galka.svg)
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        // width: 100%
+        // height: 100%
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%) scale(0)
+    //активируем чекбокс
+.real-checkbox:checked + .custom-checkbox::before
+    transform: translate(-50%, -50%) scale(1)
+    #custom-checkbox
+        border: none
